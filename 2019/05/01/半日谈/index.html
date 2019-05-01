@@ -14,6 +14,13 @@
 
 
 
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet">
+
 
 
 
@@ -79,17 +86,17 @@
 
 
 
-<meta name="description" content="title:gitlab 内网搭建博客要点1.前提是要有gitlabpages2.下载git 下载nodejs3.用内网url下载 脚手架4.跳过init 和 install 直接考入文件5.本地调试 hexo c g(generate) s6.gitlab建库(库名要对照)7.本地代码push远程库git initgit add -A(2)git commit -m “init blog”(2">
+<meta name="description" content="我们似乎总会在某一年，爆发性的长大；爆发性的觉悟；爆发性的知道某个真相，让原本没有什么意义的时间的刻度，成了一道分界线。 ——《老灵魂》   很少有哪一个月，像五月这样，它总是清晨弥漫着雾；午后如同酷暑；夜风却又常常沁凉得如同山林里的泉水。对于太多太多人来说，这个五月好像永远不会过去。   有朋友约我昨天下午去参加球赛，可由于球赛的时间正好和上班的时间冲突，自然就推辞了；约了同学今天去吃饭也">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Jin Yun Long">
-<meta property="og:url" content="http://yoursite.com/2019/04/10/内网环境用gitlab搭建博客(有gitlabpage)为前提/index.html">
-<meta property="og:site_name" content="Jin Yun Long">
-<meta property="og:description" content="title:gitlab 内网搭建博客要点1.前提是要有gitlabpages2.下载git 下载nodejs3.用内网url下载 脚手架4.跳过init 和 install 直接考入文件5.本地调试 hexo c g(generate) s6.gitlab建库(库名要对照)7.本地代码push远程库git initgit add -A(2)git commit -m “init blog”(2">
+<meta property="og:title" content="半日谈">
+<meta property="og:url" content="http://yoursite.com/2019/05/01/半日谈/index.html">
+<meta property="og:site_name" content="JYL">
+<meta property="og:description" content="我们似乎总会在某一年，爆发性的长大；爆发性的觉悟；爆发性的知道某个真相，让原本没有什么意义的时间的刻度，成了一道分界线。 ——《老灵魂》   很少有哪一个月，像五月这样，它总是清晨弥漫着雾；午后如同酷暑；夜风却又常常沁凉得如同山林里的泉水。对于太多太多人来说，这个五月好像永远不会过去。   有朋友约我昨天下午去参加球赛，可由于球赛的时间正好和上班的时间冲突，自然就推辞了；约了同学今天去吃饭也">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-17T03:30:47.699Z">
+<meta property="og:updated_time" content="2019-05-01T16:23:07.394Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jin Yun Long">
-<meta name="twitter:description" content="title:gitlab 内网搭建博客要点1.前提是要有gitlabpages2.下载git 下载nodejs3.用内网url下载 脚手架4.跳过init 和 install 直接考入文件5.本地调试 hexo c g(generate) s6.gitlab建库(库名要对照)7.本地代码push远程库git initgit add -A(2)git commit -m “init blog”(2">
+<meta name="twitter:title" content="半日谈">
+<meta name="twitter:description" content="我们似乎总会在某一年，爆发性的长大；爆发性的觉悟；爆发性的知道某个真相，让原本没有什么意义的时间的刻度，成了一道分界线。 ——《老灵魂》   很少有哪一个月，像五月这样，它总是清晨弥漫着雾；午后如同酷暑；夜风却又常常沁凉得如同山林里的泉水。对于太多太多人来说，这个五月好像永远不会过去。   有朋友约我昨天下午去参加球赛，可由于球赛的时间正好和上班的时间冲突，自然就推辞了；约了同学今天去吃饭也">
 
 
 
@@ -99,7 +106,7 @@
     root: '/',
     scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -119,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/04/10/内网环境用gitlab搭建博客(有gitlabpage)为前提/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/01/半日谈/">
 
 
 
 
 
-  <title> | Jin Yun Long</title>
+  <title>半日谈 | JYL</title>
   
 
 
@@ -155,12 +162,12 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Jin Yun Long</span>
+        <span class="site-title">JYL</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle">Asshole Man</p>
+        <p class="site-subtitle">YouKnowWho</p>
       
   </div>
 
@@ -232,7 +239,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/10/内网环境用gitlab搭建博客(有gitlabpage)为前提/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/01/半日谈/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Jin Yun Long">
@@ -241,7 +248,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jin Yun Long">
+      <meta itemprop="name" content="JYL">
     </span>
 
     
@@ -249,7 +256,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline"></h1>
+          <h1 class="post-title" itemprop="name headline">半日谈</h1>
         
 
         <div class="post-meta">
@@ -261,8 +268,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-10T15:14:11+08:00">
-                2019-04-10
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-01T23:01:55+08:00">
+                2019-05-01
               </time>
             
 
@@ -299,8 +306,7 @@
       
 
       
-        <hr>
-<h2 id="title-gitlab-内网搭建博客要点"><a href="#title-gitlab-内网搭建博客要点" class="headerlink" title="title:gitlab 内网搭建博客要点"></a>title:gitlab 内网搭建博客要点</h2><p>1.前提是要有gitlabpages<br>2.下载git 下载nodejs<br>3.用内网url下载 脚手架<br>4.跳过init 和 install 直接考入文件<br>5.本地调试 hexo c g(generate) s<br>6.gitlab建库(库名要对照)<br>7.本地代码push远程库<br>git init<br>git add -A(2)<br>git commit -m “init blog”(2)<br>git remote add origin <a href="mailto:git@gitlab.com" target="_blank" rel="noopener">git@gitlab.com</a>:username/username.gitlab.io.git<br>git push -u origin master(2)<br>8.配置.gitlab-ci.yml准备ci/cd集成测试<br>9.下载gitlab-runner后注册并运行<br>9.（1）注册时要注意和gitlab的版本对应<br>9.（2）默认tags选windows<br>10.通过集成测试（test:passed deploy:passed）<br>11.gitlabsetting 中 gitlabpages 要配置好url访问路径</p>
+        <p>   我们似乎总会在某一年，爆发性的长大；爆发性的觉悟；爆发性的知道某个真相，让原本没有什么意义的时间的刻度，成了一道分界线。 ——《老灵魂》<br>   很少有哪一个月，像五月这样，它总是清晨弥漫着雾；午后如同酷暑；夜风却又常常沁凉得如同山林里的泉水。对于太多太多人来说，这个五月好像永远不会过去。<br>   有朋友约我昨天下午去参加球赛，可由于球赛的时间正好和上班的时间冲突，自然就推辞了；约了同学今天去吃饭也因朋友临时有事就取消了；想联系最好的兄弟聊聊人生理想什么的，但想想大家也都要为生计辛苦奔波也就没敢去叨扰。最近做梦还经常会梦到自己的学生时代，想想还是挺怀念的。<br>  怀念的也不是具体什么人，怀念的是那段时光。<br>    能想起黄昏时的操场；放学后喧嚣的车站；校门口的小卖部；喜欢一个人时小心翼翼的心情。<br>    我知道那是一种什么样的感觉，却无法找出恰当的词去形容它。<br>    每天早上6点准时起床下楼去训练，回来后咕咚咚灌下一大壶凉水，啃一个干干硬硬的面包，逃掉上午的数据库设计课在宿舍一起和室友看骑士队比赛；中午下了课的室友每天都会帮自己带饭，吃完后再睡一会觉，下午能起来的话就去上会课，起不来的话就索性睡到4点后接着去操场踢球，踢到伸手不见五指的时间回宿舍和室友一起去浴室洗个澡，回来叫个外卖吃完后大家一起联机打游戏直到熄灯，日复一日。<br>  我爱我的青春时代，它就应该是这样的。<br>    我也不是说现在不好，领导们都很平易近人，同事们相处得也非常融洽，我只是想念。<br>    哪怕有些事情我现在想起来觉得傻气，但也只有那个时候的才能经历一遍了。<br>    最近下班在车站经常能看见自己高中时的女朋友，原来她也在我单位附近上班，明明我当初 是被甩的，可看到她现在过的还不错，自己也是发自心底的替她高兴。<br>    人生中每个事情都是当下的，小时候你以为游戏机你会爱一辈子。<br>    但一个我推开门离开，另外一个我再走进来，是同一个我，也好像不是十几岁的那个我了。<br>    和同年新入职的同学同事相比，自己的收入还算可观，可是一涉及到房子恋爱什么的，感觉形式就变得严峻了起来。<br>    人的欲望总是会无限的扩大，就像《拾麦穗的人》中阐述的一样:贪婪是没有阈值的。我没有理想，也不想成为一个贪婪的人，现在努力奋斗也不是为了将来能升官发财，我只想回报那些以前帮助过我的人；白岩松在最近的访谈节目中说话一段话:”我不想对太多帮助过我的人说谢谢，因为我要以加倍的方式，去对待新的年轻人。这就是我说谢谢的方式。”我想通过自己的双手去努力奋斗，为社会做出自己的贡献，这应该也是以前帮助过的我的人们最希望看到的吧。<br>    若干年后，假如我变成了一个既得利益者，我想我会是一名引导者，而不是阻拦者。<br>    这季度整个分行的员工都降薪了，但我们部门的表现肯定还是最优秀的，就这样继续努力下去吧。<br>    五月你好。</p>
 
       
     </div>
@@ -325,15 +331,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/04/15/内网环境用gitlab搭建博客(有gitlabpage)为前提/" rel="next" title="GITLAB内网搭建博客要点">
+                <i class="fa fa-chevron-left"></i> GITLAB内网搭建博客要点
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/04/11/林克不会飞的个人博客/" rel="prev" title="林克不会飞的个人博客">
-                林克不会飞的个人博客 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -385,24 +391,15 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image" src="http://gss0.baidu.com/94o3dSag_xI4khGko9WTAnF6hhy/zhidao/pic/item/80cb39dbb6fd526670d83a52a218972bd5073680.jpg" alt="Jin Yun Long">
             
               <p class="site-author-name" itemprop="name">Jin Yun Long</p>
-              <p class="site-description motion-element" itemprop="description">I'm loser.</p>
+              <p class="site-description motion-element" itemprop="description">I'm just human.</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -412,7 +409,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -444,7 +441,7 @@
           
           
             <div id="music163player">
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=658318&auto=1&height=66"></iframe>
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=740530&auto=1&height=66"></iframe>
             </div>
           
 
@@ -452,23 +449,14 @@
       </section>
 
       
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
 
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#title-gitlab-内网搭建博客要点"><span class="nav-number">1.</span> <span class="nav-text">title:gitlab 内网搭建博客要点</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
-
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
       
 
     </div>
@@ -497,6 +485,17 @@
 
 
 
+<div>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<span id="busuanzi_container_site_pv" style="display:none">
+    ��վ�ܷ����� <span id="busuanzi_value_site_pv"></span> ��
+    <span class="post-meta-divider">|</span>
+</span>
+<span id="busuanzi_container_site_uv" style="display:none">
+    ��<span id="busuanzi_value_site_uv"></span>�˿����ҵĲ�����
+</span>
+</div>
+
 
 
         
@@ -511,11 +510,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
 
     
